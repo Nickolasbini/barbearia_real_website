@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO básico -->
+  <title>Barbearia Real | Agende pelo WhatsApp em 30 segundos</title>
+  <meta name="description"
+    content="Corte, barba e tratamento completo em Curitiba. Agende pelo WhatsApp e pague na hora com Pix, sem sair da conversa.">
+  <meta name="keywords" content="barbearia, corte de cabelo, barba, agendamento whatsapp, barbearia curitiba">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Barbearia Real | Agende pelo WhatsApp">
+  <meta property="og:description"
+    content="Corte, barba e tratamento completo. Agende pelo WhatsApp e pague com Pix na hora.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://seudominio.com/og-image.jpg">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            charcoal: '#17140F',
+            charcoal2: '#221D15',
+            cream: '#EDE6D6',
+            gold: '#C89B3C',
+            barberred: '#8B2635'
+          },
+          fontFamily: {
+            display: ['Oswald', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-charcoal text-cream">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 w-full z-50 bg-charcoal/95 backdrop-blur border-b border-gold/20">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <span class="display text-2xl font-semibold tracking-wide text-gold">BARBEARIA <span class="text-cream">REAL</span></span>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#sobre" class="hover:text-gold transition">Sobre</a>
+        <a href="#servicos" class="hover:text-gold transition">Serviços</a>
+        <a href="#depoimentos" class="hover:text-gold transition">Depoimentos</a>
+        <a href="https://wa.me/5545991499483?text=Oi!%20Quero%20agendar%20um%20horário"
+          target="_blank"
+          class="bg-gold text-charcoal px-5 py-2 rounded font-semibold hover:bg-cream transition">
+          Agendar no WhatsApp
+        </a>
+      </nav>
+
+      <button id="menuBtn" class="md:hidden text-cream text-2xl" aria-label="Abrir menu">☰</button>
+    </div>
+
+    <!-- menu mobile -->
+    <div id="mobileMenu" class="hidden md:hidden flex-col gap-4 px-6 pb-6 text-sm font-medium">
+      <a href="#sobre" class="block py-2 border-b border-gold/10">Sobre</a>
+      <a href="#servicos" class="block py-2 border-b border-gold/10">Serviços</a>
+      <a href="#depoimentos" class="block py-2 border-b border-gold/10">Depoimentos</a>
+      <a href="https://wa.me/5545991499483?text=Oi!%20Quero%20agendar%20um%20horário"
+        target="_blank"
+        class="block text-center bg-gold text-charcoal px-5 py-2 rounded font-semibold mt-2">
+        Agendar no WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="pt-36 pb-20 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-gold font-semibold tracking-widest text-sm mb-4">DESDE 1998 · CURITIBA</p>
+      <h1 class="text-4xl md:text-6xl font-semibold leading-tight mb-6">
+        Seu horário marcado em <span class="text-gold">30 segundos</span>, direto pelo WhatsApp.
+      </h1>
+      <p class="text-cream/70 text-lg mb-8 max-w-md">
+        Chega de ligar e ficar esperando resposta. Manda mensagem, escolhe o serviço, escolhe o horário e já garante sua vaga.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="https://wa.me/5545991499483?text=Oi!%20Quero%20agendar%20um%20horário"
+          target="_blank"
+          class="bg-gold text-charcoal px-8 py-4 rounded font-semibold hover:bg-cream transition">
+          Agendar agora
+        </a>
+        <a href="#servicos" class="border border-gold/40 px-8 py-4 rounded font-semibold hover:border-gold transition">
+          Ver serviços
+        </a>
+      </div>
+    </div>
+
+    <div class="relative">
+      <div class="absolute -inset-2 barber-stripes rounded-2xl opacity-30"></div>
+      <div class="relative bg-charcoal2 border border-gold/30 rounded-2xl p-8">
+        <p class="text-gold font-semibold text-sm mb-1">QUADRO DE HOJE</p>
+        <h3 class="display text-2xl mb-6">Corte + Barba</h3>
+        <p class="text-4xl font-semibold mb-1">R$ 65<span class="text-lg text-cream/50">,00</span></p>
+        <p class="text-cream/60 text-sm mb-6">Inclui toalha quente e finalização</p>
+        <a href="https://wa.me/5545991499483?text=Oi!%20Quero%20agendar%20Corte%20%2B%20Barba"
+          target="_blank"
+          class="block text-center bg-gold text-charcoal py-3 rounded font-semibold hover:bg-cream transition">
+          Agendar esse
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="py-20 px-6 bg-charcoal2 border-y border-gold/10">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
+      <div>
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-gold/10 flex items-center justify-center text-gold text-2xl">✂</div>
+        <h3 class="display text-xl mb-2">Tradição de barbeiro</h3>
+        <p class="text-cream/60 text-sm">Mais de 25 anos de navalha, técnica clássica com acabamento moderno.</p>
+      </div>
+      <div>
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-gold/10 flex items-center justify-center text-gold text-2xl">⏰</div>
+        <h3 class="display text-xl mb-2">Horário estendido</h3>
+        <p class="text-cream/60 text-sm">Aberto até às 21h de segunda a sábado, ideal pra quem sai tarde do trabalho.</p>
+      </div>
+      <div>
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-gold/10 flex items-center justify-center text-gold text-2xl">💬</div>
+        <h3 class="display text-xl mb-2">Atendimento 24h</h3>
+        <p class="text-cream/60 text-sm">Nosso assistente no WhatsApp responde e agenda a qualquer hora do dia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="text-center mb-14">
+      <p class="text-gold font-semibold tracking-widest text-sm mb-2">O QUE FAZEMOS</p>
+      <h2 class="text-3xl md:text-4xl font-semibold">Nosso quadro de preços</h2>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-6">
+
+      <div class="bg-charcoal2 border border-gold/20 rounded-xl p-6 hover:border-gold transition">
+        <h3 class="display text-lg mb-3">Corte</h3>
+        <p class="text-3xl font-semibold mb-4">R$ 40</p>
+        <a href="https://wa.me/5545991499483?text=Oi!%20Quero%20agendar%20Corte" target="_blank"
+          class="block text-center border border-gold/40 py-2 rounded text-sm font-semibold hover:bg-gold hover:text-charcoal transition">
+          Agendar esse
+        </a>
+      </div>
+
+      <div class="bg-charcoal2 border border-gold/20 rounded-xl p-6 hover:border-gold transition">
+        <h3 class="display text-lg mb-3">Barba</h3>
+        <p class="text-3xl font-semibold mb-4">R$ 35</p>
+        <a href="https://wa.me/5545991499483?text=Oi!%20Quero%20agendar%20Barba" target="_blank"
+          class="block text-center border border-gold/40 py-2 rounded text-sm font-semibold hover:bg-gold hover:text-charcoal transition">
+          Agendar esse
+        </a>
+      </div>
+
+      <div class="bg-gold text-charcoal rounded-xl p-6 border-2 border-gold relative">
+        <span class="absolute -top-3 left-6 bg-charcoal text-gold text-xs font-semibold px-3 py-1 rounded">MAIS PEDIDO</span>
+        <h3 class="display text-lg mb-3">Corte + Barba</h3>
+        <p class="text-3xl font-semibold mb-4">R$ 65</p>
+        <a href="https://wa.me/5545991499483?text=Oi!%20Quero%20agendar%20Corte%20%2B%20Barba" target="_blank"
+          class="block text-center bg-charcoal text-gold py-2 rounded text-sm font-semibold hover:bg-charcoal2 transition">
+          Agendar esse
+        </a>
+      </div>
+
+      <div class="bg-charcoal2 border border-gold/20 rounded-xl p-6 hover:border-gold transition">
+        <h3 class="display text-lg mb-3">Sobrancelha</h3>
+        <p class="text-3xl font-semibold mb-4">R$ 20</p>
+        <a href="https://wa.me/5545991499483?text=Oi!%20Quero%20agendar%20Sobrancelha" target="_blank"
+          class="block text-center border border-gold/40 py-2 rounded text-sm font-semibold hover:bg-gold hover:text-charcoal transition">
+          Agendar esse
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="py-20 px-6 bg-charcoal2 border-y border-gold/10">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14">
+        <p class="text-gold font-semibold tracking-widest text-sm mb-2">QUEM JÁ VEIO</p>
+        <h2 class="text-3xl md:text-4xl font-semibold">O que dizem nossos clientes</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-charcoal border border-gold/10 rounded-xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center font-semibold text-gold">RM</div>
+            <p class="font-semibold text-sm">Rafael M.</p>
+          </div>
+          <p class="text-cream/70 text-sm">"Marquei pelo WhatsApp de madrugada e já tinha horário confirmado de manhã. Muito prático."</p>
+        </div>
+        <div class="bg-charcoal border border-gold/10 rounded-xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center font-semibold text-gold">TC</div>
+            <p class="font-semibold text-sm">Thiago C.</p>
+          </div>
+          <p class="text-cream/70 text-sm">"O corte é excelente e o atendimento pelo Whats resolveu, nunca mais precisei ligar."</p>
+        </div>
+        <div class="bg-charcoal border border-gold/10 rounded-xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center font-semibold text-gold">BS</div>
+            <p class="font-semibold text-sm">Bruno S.</p>
+          </div>
+          <p class="text-cream/70 text-sm">"Já paguei pelo Pix direto na conversa. Rapidez que eu nunca vi em barbearia."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-6 max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4">Bora garantir seu horário?</h2>
+      <p class="text-cream/60 mb-8">Mande uma mensagem agora, nosso assistente responde na hora.</p>
+      <a href="https://wa.me/5545991499483?text=Oi!%20Quero%20agendar%20um%20horário"
+        target="_blank"
+        class="inline-block bg-gold text-charcoal px-10 py-4 rounded font-semibold hover:bg-cream transition">
+        Agendar no WhatsApp
+      </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gold/10 py-10 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <span class="display text-gold font-semibold">BARBEARIA REAL</span>
+      <p class="text-cream/40 text-sm">Rua das Tesouras, 123 · Curitiba, PR</p>
+      <p class="text-cream/40 text-sm">© 2026 Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5545991499483?text=Oi!%20Quero%20agendar%20um%20horário"
+    target="_blank"
+    aria-label="Agendar no WhatsApp"
+    class="whats-pulse fixed bottom-6 right-6 z-50 bg-[#25D366] w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.386.696 4.607 1.897 6.481L4 29l7.72-1.855A11.94 11.94 0 0 0 16 27c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm0 21.8a9.77 9.77 0 0 1-4.98-1.36l-.357-.212-4.583 1.102 1.124-4.463-.233-.367A9.76 9.76 0 0 1 6.2 15c0-5.404 4.396-9.8 9.801-9.8 5.404 0 9.8 4.396 9.8 9.8 0 5.405-4.396 9.8-9.8 9.8zm5.36-7.34c-.293-.147-1.735-.856-2.004-.954-.269-.098-.465-.147-.66.147-.196.293-.758.954-.929 1.15-.171.196-.343.22-.635.073-.293-.147-1.237-.456-2.357-1.454-.871-.777-1.46-1.737-1.63-2.03-.171-.293-.018-.451.129-.598.132-.132.293-.343.44-.514.147-.171.196-.293.293-.489.098-.196.049-.367-.024-.514-.073-.147-.66-1.59-.905-2.178-.238-.573-.48-.495-.66-.505l-.562-.01c-.196 0-.514.073-.783.367s-1.03 1.006-1.03 2.454 1.054 2.847 1.2 3.043c.147.196 2.075 3.168 5.028 4.442.703.303 1.251.484 1.679.62.705.224 1.347.192 1.854.117.566-.084 1.735-.709 1.98-1.394.244-.685.244-1.272.171-1.394-.073-.122-.269-.196-.562-.343z"/></svg>
+  </a>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+    });
+  </script>
+</body>
+
+</html>
