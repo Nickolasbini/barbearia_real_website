@@ -6,6 +6,14 @@ O projeto foi desenvolvido para o canal **CódigoPrático** e serve como um mode
 
 ---
 
+## Site ao vivo
+
+Hospedado pelo GitHub Pages:
+
+▶️ https://nickolasbini.github.io/barbearia_real_website/
+
+---
+
 ## 📺 Assista ao Tutorial Passo a Passo
 
 Quer ver como esse código foi construído do zero e aprender a estratégia de vendas por trás dele? Assista ao vídeo completo no YouTube:
